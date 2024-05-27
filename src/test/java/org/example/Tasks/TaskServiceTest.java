@@ -7,12 +7,12 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class TaskManagerTest {
+class TaskServiceTest {
 
     @Test
     public void shouldAddTaskList() {
         TaskList taskList = new TaskList("1", "Work");
-        TaskManager taskManager = new TaskManager();
+        TaskService taskManager = new TaskService();
 
         boolean taskListAdded = taskManager.addList(taskList);
 
@@ -24,7 +24,7 @@ class TaskManagerTest {
         TaskList taskList1 = new TaskList("1", "Work");
         TaskList taskList2 = new TaskList("2", "ToDos");
 
-        TaskManager taskManager = new TaskManager();
+        TaskService taskManager = new TaskService();
         taskManager.setSortOrder(SortOrder.NAME);
 
         taskManager.addList(taskList1);
@@ -42,7 +42,7 @@ class TaskManagerTest {
         Thread.sleep(1000); //to introduce difference in creation date of the 2 taskslists
         TaskList taskList2 = new TaskList("2", "ToDos");
 
-        TaskManager taskManager = new TaskManager();
+        TaskService taskManager = new TaskService();
         taskManager.setSortOrder(SortOrder.CREATED_DATE);
 
         taskManager.addList(taskList1);

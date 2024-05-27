@@ -5,11 +5,11 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class TaskManager {
+public class TaskService {
     private final List<TaskList> taskLists;
     private SortOrder sortOrder = SortOrder.CREATED_DATE;
 
-    public TaskManager() {
+    public TaskService() {
          this.taskLists = new ArrayList();
     }
 
