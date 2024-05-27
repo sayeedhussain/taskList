@@ -21,7 +21,6 @@ public class TaskManager {
         this.sortOrder = sortOrder;
     }
 
-    //TODO Update package structure
     public List<TaskList> getSortedTaskLists() {
         List<TaskList> newTaskLists = new ArrayList<>(taskLists);
         Comparator comparator = sortOrder == SortOrder.CREATED_DATE
