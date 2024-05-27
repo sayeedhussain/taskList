@@ -1,14 +1,12 @@
 package org.example.Tasks;
 
 import org.example.Tasks.Model.TaskList;
-
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
 public class TaskManager {
     private final List<TaskList> taskLists;
-
     private SortOrder sortOrder = SortOrder.CREATED_DATE;
 
     public TaskManager() {
@@ -23,9 +21,11 @@ public class TaskManager {
         this.sortOrder = sortOrder;
     }
 
+    //TODO Update package structure
     public List<TaskList> getSortedTaskLists() {
         List<TaskList> newTaskLists = new ArrayList<>(taskLists);
-        Comparator comparator = sortOrder == SortOrder.CREATED_DATE ? new Comparators.DateComparator() : new Comparators.NameComparator();
+        Comparator comparator = sortOrder == SortOrder.CREATED_DATE
+                ? new Comparators.DateComparator() : new Comparators.NameComparator();
         newTaskLists.sort(comparator);
         return newTaskLists;
     }

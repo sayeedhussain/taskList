@@ -1,7 +1,10 @@
 package org.example.Tasks.Model;
 
 import org.junit.jupiter.api.Test;
-import java.time.LocalDate;
+
+import java.time.Instant;
+import java.util.Date;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 class TaskTest {
@@ -10,7 +13,7 @@ class TaskTest {
     public void shouldGetIsDueToday() {
         String id = "1";
         String description = "Some description";
-        LocalDate dueDate = LocalDate.now();
+        Date dueDate = Date.from(Instant.now());
         Task task = new Task(id, description, dueDate);
 
         boolean isDueToday = task.isDueToday();
