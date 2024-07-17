@@ -8,4 +8,4 @@ Potential features that can be added to the project
 
 - Show all taskLists which have tasks due next week
 - Show completed taskLists
-- Sort tasks by priority
+- Sort tasks in taskList by priority
