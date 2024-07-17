@@ -6,7 +6,6 @@ import java.util.Date;
 import java.util.List;
 
 public class TaskList {
-
     private final String id;
     private final String name;
     private final List<Task> tasks;
