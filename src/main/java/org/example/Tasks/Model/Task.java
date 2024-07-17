@@ -1,15 +1,17 @@
 package org.example.Tasks.Model;
 
+import lombok.Getter;
 import org.example.utils.DateUtils;
 
 import java.time.Instant;
 import java.util.Date;
 
 public class Task {
-    private final String id;
-    private final String description;
-    private final Date dueDate;
-    private Date createdDate;
+    //TODO Notice the private getter
+    private @Getter final String id;
+    private @Getter final String description;
+    private @Getter Date createdDate;
+    private @Getter final Date dueDate;
 
     public Task(String id, String description, Date dueDate) {
         this.id = id;
@@ -18,8 +20,11 @@ public class Task {
         this.createdDate = Date.from(Instant.now());
     }
 
+    //TODO Why isDueToday in this class and not TaskList class
     public boolean isDueToday() {
         return DateUtils.isToday(this.dueDate);
     }
+
+
 
 }

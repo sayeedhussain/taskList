@@ -1,7 +1,7 @@
 package org.example.Tasks;
 
 public enum SortOrder {
-    NAME,
+    DUE_DATE,
     CREATED_DATE
 }
 
