@@ -3,7 +3,6 @@ package org.example.Tasks.Model;
 import org.example.utils.DateUtils;
 
 import java.time.Instant;
-import java.time.LocalDate;
 import java.util.Date;
 
 public class Task {
