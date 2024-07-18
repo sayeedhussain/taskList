@@ -23,26 +23,4 @@ public class TaskList {
         this.tasks = new ArrayList();
         this.createdDate = Date.from(Instant.now());
     }
-
-    // TODO Why addTask method is here
-    public boolean addTask(Task task) {
-        return tasks.add(task);
-    }
-
-    // TODO Why getTasksDueToday method is here
-    public List<Task> getTasksDueToday() {
-        return tasks.stream().filter(it -> it.isDueToday()).toList();
-    }
-
-    public List<Task> sortTasks(SortOrder sortOrder) {
-        List<Task> sortedTaskList = new ArrayList<>(tasks);
-        Comparator comparator = getComparator(sortOrder);
-        sortedTaskList.sort(comparator);
-        return sortedTaskList;
-    }
-
-    private Comparator getComparator(SortOrder sortOrder) {
-        return sortOrder == SortOrder.CREATED_DATE
-                ? new TaskComparators.DueDateComparator() : new TaskComparators.CreatedDateComparator();
-    }
 }

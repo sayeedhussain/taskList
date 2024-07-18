@@ -19,10 +19,4 @@ public class Task {
         this.dueDate = dueDate;
         this.createdDate = Date.from(Instant.now());
     }
-
-    // TODO Why isDueToday in this class and not TaskList class
-    public boolean isDueToday() {
-        return DateUtils.isToday(this.dueDate);
-    }
-
 }
