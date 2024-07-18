@@ -25,6 +25,4 @@ public class Task {
         return DateUtils.isToday(this.dueDate);
     }
 
-
-
 }

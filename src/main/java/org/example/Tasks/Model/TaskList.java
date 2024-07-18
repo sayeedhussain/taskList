@@ -29,13 +29,10 @@ public class TaskList {
     }
 
     //TODO Why getTasksDueToday method is here
-    //TODO Notice the returned tasks are not mutable as there are no public setters for Task
     public List<Task> getTasksDueToday() {
         return tasks.stream().filter(it -> it.isDueToday()).toList();
     }
 
-
-    //TODO Notice we are creating a new array
     public List<Task> sortTasks(SortOrder sortOrder) {
         List<Task> sortedTaskList = new ArrayList<>(tasks);
         Comparator comparator = getComparator(sortOrder);
