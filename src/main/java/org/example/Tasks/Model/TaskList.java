@@ -11,6 +11,7 @@ import java.util.Date;
 import java.util.List;
 
 public class TaskList {
+    //TODO Notice the private getter
     private @Getter final String id;
     private @Getter final String name;
     private @Getter final List<Task> tasks;
