@@ -19,4 +19,9 @@ public class Task {
         this.dueDate = dueDate;
         this.createdDate = Date.from(Instant.now());
     }
+
+    public boolean isDueToday() {
+        return DateUtils.isToday(this.dueDate);
+    }
+
 }

@@ -28,4 +28,8 @@ public class TaskList {
         return tasks.add(task);
     }
 
+    public List<Task> getTasksDueToday() {
+        return tasks.stream().filter(it -> it.isDueToday()).toList();
+    }
+
 }
