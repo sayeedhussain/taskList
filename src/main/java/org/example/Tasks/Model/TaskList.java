@@ -11,7 +11,7 @@ import java.util.Date;
 import java.util.List;
 
 public class TaskList {
-    //TODO Notice the private getter
+    // TODO Notice the private getter
     private @Getter final String id;
     private @Getter final String name;
     private @Getter final List<Task> tasks;
@@ -24,12 +24,12 @@ public class TaskList {
         this.createdDate = Date.from(Instant.now());
     }
 
-    //TODO Why addTask method is here
+    // TODO Why addTask method is here
     public boolean addTask(Task task) {
         return tasks.add(task);
     }
 
-    //TODO Why getTasksDueToday method is here
+    // TODO Why getTasksDueToday method is here
     public List<Task> getTasksDueToday() {
         return tasks.stream().filter(it -> it.isDueToday()).toList();
     }

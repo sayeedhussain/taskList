@@ -7,7 +7,7 @@ import java.time.Instant;
 import java.util.Date;
 
 public class Task {
-    //TODO Notice the private getter
+    // TODO Notice the private getter
     private @Getter final String id;
     private @Getter final String description;
     private @Getter Date createdDate;
@@ -20,7 +20,7 @@ public class Task {
         this.createdDate = Date.from(Instant.now());
     }
 
-    //TODO Why isDueToday in this class and not TaskList class
+    // TODO Why isDueToday in this class and not TaskList class
     public boolean isDueToday() {
         return DateUtils.isToday(this.dueDate);
     }
