@@ -23,4 +23,9 @@ public class TaskList {
         this.tasks = new ArrayList();
         this.createdDate = Date.from(Instant.now());
     }
+
+    public boolean addTask(Task task) {
+        return tasks.add(task);
+    }
+
 }
