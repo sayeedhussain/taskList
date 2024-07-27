@@ -1,5 +1,6 @@
-package org.example.utils;
+package org.example.richDomainObjects.utils;
 
+import org.example.richDomainObjects.utils.DateUtils;
 import org.junit.jupiter.api.Test;
 
 import java.time.Instant;

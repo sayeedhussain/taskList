@@ -1,6 +1,6 @@
-package org.example.Tasks;
+package org.example.richDomainObjects.Tasks;
 
-import org.example.Tasks.Model.Task;
+import org.example.richDomainObjects.Tasks.Model.Task;
 
 import java.util.Comparator;
 

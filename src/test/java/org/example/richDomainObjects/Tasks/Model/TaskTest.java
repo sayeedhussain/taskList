@@ -1,5 +1,6 @@
-package org.example.Tasks.Model;
+package org.example.richDomainObjects.Tasks.Model;
 
+import org.example.richDomainObjects.Tasks.Model.Task;
 import org.junit.jupiter.api.Test;
 
 import java.time.Instant;

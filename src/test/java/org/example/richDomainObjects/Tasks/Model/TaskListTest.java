@@ -1,6 +1,8 @@
-package org.example.Tasks.Model;
+package org.example.richDomainObjects.Tasks.Model;
 
-import org.example.Tasks.SortOrder;
+import org.example.richDomainObjects.Tasks.Model.Task;
+import org.example.richDomainObjects.Tasks.Model.TaskList;
+import org.example.richDomainObjects.Tasks.SortOrder;
 import org.junit.jupiter.api.Test;
 
 import java.time.Instant;

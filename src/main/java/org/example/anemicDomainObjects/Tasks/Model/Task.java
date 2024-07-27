@@ -1,7 +1,7 @@
-package org.example.Tasks.Model;
+package org.example.anemicDomainObjects.Tasks.Model;
 
 import lombok.Getter;
-import org.example.utils.DateUtils;
+import org.example.richDomainObjects.utils.DateUtils;
 
 import java.time.Instant;
 import java.util.Date;

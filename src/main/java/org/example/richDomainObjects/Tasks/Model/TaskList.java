@@ -1,8 +1,8 @@
-package org.example.Tasks.Model;
+package org.example.richDomainObjects.Tasks.Model;
 
 import lombok.Getter;
-import org.example.Tasks.SortOrder;
-import org.example.Tasks.TaskComparators;
+import org.example.richDomainObjects.Tasks.SortOrder;
+import org.example.richDomainObjects.Tasks.TaskComparators;
 
 import java.time.Instant;
 import java.util.ArrayList;

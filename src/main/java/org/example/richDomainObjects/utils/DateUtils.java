@@ -1,4 +1,4 @@
-package org.example.utils;
+package org.example.richDomainObjects.utils;
 
 import java.util.Calendar;
 import java.util.Date;
